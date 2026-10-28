@@ -1,6 +1,32 @@
 #include <stdint.h>
 #include <stddef.h>
 
+/* String length */
+size_t strlen(const char *s)
+{
+    size_t n = 0;
+    while (s[n] != '\0')
+        ++n;
+    return n;
+}
+
+char *strncpy(char *dest, const char *src, size_t n)
+{
+    size_t i = 0;
+
+    while (i < n && src[i] != '\0') {
+        dest[i] = src[i];
+        ++i;
+    }
+
+    while (i < n) {
+        dest[i] = '\0';
+        ++i;
+    }
+
+    return dest;
+}
+
 /* Memory initialization */
 void *memset(void *dest, int value, size_t n)
 {

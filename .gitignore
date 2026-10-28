@@ -4,6 +4,7 @@
 *.bin
 *.map
 *.dump
+*.dis
 
 # Host test executable
 /minirubik/host_test
