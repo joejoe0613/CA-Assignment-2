@@ -1,6 +1,13 @@
+# Object and executable files
 *.o
 *.elf
 *.bin
 *.map
-*.log
 *.dump
+
+# Host test executable
+/minirubik/host_test
+
+# Temporary files
+*.log
+*.tmp
