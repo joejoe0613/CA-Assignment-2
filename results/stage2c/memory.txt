@@ -1,0 +1,12 @@
+microtest.elf  :
+section              size     addr
+.text               16000    65536
+.rodata              5268    81536
+.data                   4    86804
+.bss                51664    86808
+.stack               4104   138472
+.riscv.attributes      37        0
+.comment               51        0
+Total               77128
+
+

@@ -30,6 +30,7 @@ static int test_failing_assertion(void)
 }
 
 void register_runtime_tests(void);
+void register_minirubik_tests(void);
 
 int main(void)
 {
@@ -40,6 +41,7 @@ int main(void)
                   "printer_smoke");
     
     register_runtime_tests();
+    register_minirubik_tests();
 
 #ifdef TEST_EXPECTED_FAILURE
     register_test(test_failing_assertion, 0, 0,

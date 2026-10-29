@@ -9,6 +9,9 @@
 # Host test executable
 /minirubik/host_test
 
+# Host-generated executable
+/tests/minirubik/reference/generate_reference
+
 # Temporary files
 *.log
 *.tmp
